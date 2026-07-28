@@ -1,23 +1,10 @@
 ---
-import Head from '../components/head.astro'
-import Footer from '../components/footer.astro'
+import Layout from "../layouts/layouts.astro"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<Layout>
 
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="public/img/icons/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio Amapola</title>
-    <link rel="stylesheet" href="/src/global-styles/global.css">
-</head>
-<body>
-    <Head/>
-
-
-        <section class="about">
+    <section class="about">
 
            <div class="historia-flex">
 
@@ -99,9 +86,7 @@ import Footer from '../components/footer.astro'
         </section>
 
 
-    <Footer/>
-</body>
-</html>
+</Layout>
 
 <style>
 
