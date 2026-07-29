@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/layouts.astro" 
+// imgenes
+import Insta from "../assets/contact-img/instagram.webp"
+import Face from "../assets/contact-img/facebook.webp"
+import Gmail from "../assets/icons/gmail.png"
+import Whats from "../assets/icons/whatsapp.png"
 ---
 
 <Layout>
@@ -17,14 +22,14 @@ import Layout from "../layouts/layouts.astro"
 
             <div class="flex">
                 <div class="facebook">
-                    <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank"><img src="/public/img/contact-img/facebook.webp" alt="" ></a>
+                    <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank"><img src={Face.src} alt="" ></a>
                     <p>Facebook:</p>
                     <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank">Colegio Amapola</a>
                 </div>
     
                 <div class="insta">
                     
-                    <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank"><img src="/public/img/contact-img/instagram.webp" alt=""></a>
+                    <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank"><img src={Insta.src} alt=""></a>
                     <p>Instagram:</p>
                     <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank">@colegioamapola</a>
     
@@ -32,7 +37,7 @@ import Layout from "../layouts/layouts.astro"
 
                 <div class="whats">
 
-                    <img src="/public/img/icons/whatsapp.png" alt="">
+                    <img src={Whats.src} alt="">
                     <p>Whatsapp:</p>
                     <span>849-408-7985</span>
     
@@ -40,7 +45,7 @@ import Layout from "../layouts/layouts.astro"
                 
                 <div class="email">
                     
-                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank"></a><img src="/public/img/icons/gmail.png" alt=""></a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank"></a><img src={Gmail.src} alt=""></a>
                     <p>Correo electornico:</p>
                     <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank">Info@colegioamapola.com</a>
                 </div>

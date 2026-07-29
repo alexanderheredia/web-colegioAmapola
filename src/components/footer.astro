@@ -1,8 +1,13 @@
-
+---
+import Logo from "../assets/icons/logo.png"
+import Gmail from "../assets/icons/gmail.png"
+import Tele from "../assets/icons/telefono.png"
+import Whats from "../assets/icons/whatsapp.png"
+---
 <footer class="pie">
     
     <div class="logo-foot">
-        <img src="/public/img/icons/logo.png" alt="">
+        <img src={Logo.src} alt="">
         <p>
             Nosotros el Colegio Amapola somos una institución capaz de brindarle a nuestros estudianttes una experiencia inolvidable y que les va a ayudar en un futuro para harcese profesionales
         </p>
@@ -14,13 +19,13 @@
         <div class="correo">
             <h1>Contacto:</h1>
             <h3 id="correo">Correo electronico</h3>
-            <p><img src="/public/img/icons/gmail.png" alt=""><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank">Info@colegioamapola.com</a></p>
+            <p><img src={Gmail.src} alt=""><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank">Info@colegioamapola.com</a></p>
         </div>
 
         <div class="tel">
             <h3 id="tel">Telefono</h3>
-            <p><img src="/public/img/icons/telefono.png" alt="">809-592-3224</p>
-            <p><img src="/public/img/icons/whatsapp.png" alt="">849-408-7985</p>
+            <p><img src={Tele.src} alt="">809-592-3224</p>
+            <p><img src={Whats.src} alt="">849-408-7985</p>
         </div>
     </div>
 
