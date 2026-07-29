@@ -73,7 +73,10 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 						Pueden encontrarnos en nuestras <a href="#">Instalaciones</a>, la cual esta ubicada en <a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" >Av. Trinitaria No. 28, Cancino 1, 
 						Santo Domingo Este, Rep Dom.</a>
 					</p>
-					<a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" ><button>Ver mapa</button></a>
+					<a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" 
+					target="_blank" >
+						<button>Ver mapa</button>
+					</a>
 				</div>
 		 
 		 
@@ -86,13 +89,12 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 		</section>
 
 
+
 </Layout>
 
 <style>
 
-	.inicio{
-		overflow: hidden;
-	}
+	.inicio{overflow: hidden;}
 
 	.bgc{
 		background-image: url("../assets/index-image/main-fondo.jpg");
@@ -110,16 +112,13 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 		align-items: center;
 	}
 
-	.presentation img{
-		width: 300px;
-	}
+	.presentation img{width: 300px;}
 
-	.title{
-		margin-right: 35px;
-	}
+	.title{margin-right: 35px;}
 
 	#title{
 		font-size: 85px;
+		margin-bottom: -90px;
 		color: rgb(255, 255, 255);
 	}
 
@@ -131,8 +130,8 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 
 	.relleno{
 		padding: 25px;
-		background: rgb(238,60,59);
-		background: linear-gradient(180deg, rgba(233,60,61,1) 70%, rgba(59,67,123,1) 100%);
+		background: #081d70;
+		background: radial-gradient(circle, rgba(8, 29, 112, 1) 0%, rgba(31, 63, 99, 1) 100%);
 		box-shadow: inset 0px 7px 48px -21px rgba(59,66,123,1);
 	}
 
@@ -156,14 +155,11 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 		font-style: italic;
 	}
 
-	.relleno-text p{
-		font-size: 22px;
-	}
+	.relleno-text p{font-size: 22px;}
 
 	.img-relleno img{
 		width: 390px;
 		margin-left: 50px;
-	
 	}
 
 	.relleno2{
@@ -194,7 +190,6 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 		
 	}
 
-
 	.relleno-text2{
 		font-size: 25px;
 		margin-bottom: 95px;
@@ -215,14 +210,13 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 		color: white;
 	}
 
-	.btn-relleno2 button:active{
-		background-color: #494a4d;
-	}
+	.btn-relleno2 button:active{background-color: #494a4d;}
 
 	.img-relleno2{
 		display: flex;
 		flex-direction: column;
 	}
+
 	.img-relleno2 img{
 		width: 500px;
 		border: 2px #fff solid;
@@ -243,17 +237,11 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 		max-width: 500px;
 	}
 
-	.map img{
-		border-radius: 45px;
-	}
+	.map img{border-radius: 45px;}
 
-	.direccion h1{
-		font-size: 40px;
-	}
+	.direccion h1{font-size: 40px;}
 
-	.direccion p{
-		font-size: 20px;
-	}
+	.direccion p{font-size: 20px;}
 
 	.direccion button{
 		font-size: 20px;
@@ -272,9 +260,7 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 		color: black;
 	}
 
-	.direccion button:hover{
-		color: white;
-	}
+	.direccion button:hover{color: white;}
 
 	.direccion button:hover{
 		border: rgb(185, 182, 182) solid;
@@ -319,17 +305,11 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 			font-style: italic;
 		}
 
-		.relleno-text p{
-			font-size: 22px;
-		}
+		.relleno-text p{font-size: 22px;}
 
-		.img-relleno img{
-			width: 390px;
-		}
+		.img-relleno img{width: 390px;}
 
-		.relleno2{
-			display: block;
-		}
+		.relleno2{display: block;}
 
 		.ancho{
 			max-width: 2195px;
@@ -340,22 +320,16 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 
 	@media(max-width:1200px) {
 		
-		.relleno img{
-			display: none;
-		}
+		.relleno img{display: none;}
 
-		.relleno2 img{
-			display: none;
-		}
+		.relleno2 img{display: none;}
 
 		.relleno2 .back{
 			margin-right: 25px;
 			margin-left: 25px;
 		}
 		
-		.direccion{
-			width: 380px;
-		}
+		.direccion{width: 380px;}
 
 		.map img{
 			width: 400px;
@@ -365,17 +339,11 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 	
 	@media(max-width: 1080px){
 		
-		.presentation img{
-			width: 200px;
-		}
+		.presentation img{width: 200px;}
 
-		#title{
-			font-size: 65px;
-		}
+		#title{font-size: 65px;}
 
-		#lema{
-			font-size: 48px;
-		}
+		#lema{font-size: 48px;}
 
 		.direccion{
 			text-align: center;
@@ -383,13 +351,9 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 			margin-right: 5px;
 		}
 
-		.map img{
-			display: none;
-		}
+		.map img{display: none;}
 
-		.direccion h1{
-			font-size: 35px;
-		}
+		.direccion h1{font-size: 35px;}
 
 		.direccion p{
 			margin-top: 10px;
@@ -398,28 +362,27 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 
 	}
 
+	@media(max-width:910px){
+
+		#title{margin-bottom: -50px;}
+
+	}
+
 	@media (max-width: 860px){
 
-		.img-relleno, .img-relleno2{
-			display:none;
-		}
+		.img-relleno, 
+		.img-relleno2{display:none;}
 
-		.relleno-text h1{
-			font-size: 35px;
-		}
+		.relleno-text h1{font-size: 35px;}
 
-		.relleno-text p{
-			font-size: 20px;
-		}
+		.relleno-text p{font-size: 20px;}
 
 		.relleno2 .back{
 			margin-right: 25px;
 			margin-left: 25px;
 		}
 
-		.map{
-			display: none;
-		}
+		.map{display: none;}
 	}
 
 	@media(max-width: 760px){
@@ -430,25 +393,17 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 			align-items: center;
 		}
 
-		.title{
-			margin-left: 35px;
-		}
+		.title{margin-left: 35px;}
 
-		#title{
-			font-size: 45px;
-		}
+		#title{font-size: 45px;}
 
-		#lema{
-			font-size: 35px;
-		}
+		#lema{font-size: 35px;}
 
 	}
 
 	@media(max-width: 670px){
 		
-		.relleno-text h1{
-			text-align: center;
-		}
+		.relleno-text h1{text-align: center;}
     }
 
 	@media(max-width: 660px){
@@ -461,17 +416,11 @@ import Ubicacion from "../assets/index-image/ubicacion.jpg"
 
 	@media(max-width: 400px){
 		
-		.title{
-			margin: 0 auto;
-		}
+		.title{margin: 0 auto;}
 
-		#title{
-			font-size: 45px;
-		}
+		#title{font-size: 45px;}
 
-		#lema{
-			font-size: 30px;
-		}
+		#lema{font-size: 30px;}
 
 		.relleno-text{
 			background-color: rgb(229, 232, 232);

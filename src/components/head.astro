@@ -1,5 +1,6 @@
 ---
-import Logo from "../assets/icons/logo-head.png"
+import Logo from "../assets/icons/logo.png"
+import Menu from "../assets/icons/menu.ico"
 ---
 
 <header class="head">
@@ -15,20 +16,19 @@ import Logo from "../assets/icons/logo-head.png"
         
         <ul class="ul-head" id="menuList">
             <li class="li-head"><a href="/">Inicio</a></li>
+            <li class="li-head"><a href="/admisiones">Admisiones</a></li>
             <li class="li-head"><a href="/about">Sobre nosotros</a></li>
-            <li class="li-head"><a href="/actividades">Instalaciones</a></li>
-            <!-- <li class="li-head"><a href="/admisiones">Admisiones</a></li> -->
             <li class="li-head"><a href="/contact">Contactanos</a></li>
+
         </ul>
         
         <div class="menu" >
             <details>
-                <summary><img src="/public/img/icons/menu.ico" alt=""></summary>
+                <summary><img src={Menu} alt=""></summary>
                 <ul class="ul-head-responsive" id="menuList">
                     <li class="li-head"><a href="/">Inicio</a></li>
-                    <li class="li-head"><a href="/about">Sobre nosotros</a></li>
-                    <li class="li-head"><a href="/actividades">Instalaciones</a></li>
                     <li class="li-head"><a href="/admisiones">Admisiones</a></li>
+                    <li class="li-head"><a href="/about">Sobre nosotros</a></li>
                     <li class="li-head"><a href="/contact">Contactanos</a></li>
                 </ul>
             </details>
@@ -46,8 +46,8 @@ import Logo from "../assets/icons/logo-head.png"
     .head{
         display: flex;
         justify-content: space-between;
-        background: rgb(238,60,59);
-        background: linear-gradient(142deg, rgba(238,60,59,1) 0%, rgba(59,67,123,1) 68%);
+        background: #081d70;
+        background: radial-gradient(circle, rgba(8, 29, 112, 1) 0%, rgba(31, 63, 99, 1) 100%);
         align-items: center;
         border-bottom: 2px solid white;
         position: sticky;
@@ -64,9 +64,7 @@ import Logo from "../assets/icons/logo-head.png"
         margin-bottom: 15px;
     }
 
-    .logo img{
-        width: 100px;
-    }
+    .logo img{width: 100px;}
 
     .menu{ 
         display: none; 
@@ -75,13 +73,9 @@ import Logo from "../assets/icons/logo-head.png"
         height: 100%;
     }
 
-    .menu img{
-        width: 45px;
-    }
+    .menu img{width: 45px;}
 
-    summary{
-        list-style: none;
-    }
+    summary{list-style: none;}
 
     nav .ul-head{
         display: flex;
@@ -91,34 +85,26 @@ import Logo from "../assets/icons/logo-head.png"
         margin-right: 15px;
     }
 
-    .li-head{
-        padding: 15px 0;
-    }
+    .li-head{padding: 15px 0;}
 
     .li-head a{
         font-size: 20px;
         cursor: pointer;
         padding: 10px 20px;
         font-weight: bolder;
-        border-radius: 30px;
-        transition: 0.1s;
+        transition: 0.3s;
     }
 
     .li-head a{
         text-decoration: none;
         color: white;
         user-select: none;
+
     }
 
-    .li-head a:hover{
-        border-bottom: 4px solid #e23939;
-    }
+    .li-head a:hover{text-decoration: underline #ee3c3b;}
 
-    .li-head a:active{
-        color: rgb(210, 209, 209);
-        border: 2px solid #e23939;
-        border-bottom: 4px solid #e23939;
-    }
+    .li-head a:active{color: rgb(210, 209, 209);}
 
     /* Responsive */
 
@@ -139,13 +125,9 @@ import Logo from "../assets/icons/logo-head.png"
             border: 2px solid black;
         }
 
-        nav .ul-head{
-            display: none;
-        }
+        nav .ul-head{display: none;}
 
-        .li-head{
-            list-style: none;
-        }
+        .li-head{list-style: none;}
 
         .li-head a{
             font-size: 20px;

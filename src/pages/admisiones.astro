@@ -5,10 +5,53 @@ import Layout from '../layouts/layouts.astro'
 
 <Layout>
 
+    <section class="caja">
+        <h1>Requisitos de admision</h1>
+
+        <ul>
+            <li>Acta de nacimiento original.</li>
+            <li>4 fotos 2x2.</li>
+            <li>Cedula de los padres.</li>
+            <li>Notas curso anterior.</li>
+            <li>Ficha de Inscripcion debidamente completada y firmada.</li>
+            <li>Reglamento de Pagos firmado.</li>
+        </ul>
+
+        <a href="https://site3.q10.com/Preinscripcion?aplentId=c9394a93-a8a0-4585-b800-d7b2a01b29dd" target="_blank"><button>Iniciar preinscripcion</button></a>
+    </section>
+
 </Layout>
 
 <style>
 
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 140px;
+
+}
+
+button{
+    padding: 10px 15px;
+    color: white;
+    background-color: var(--azul);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.3s ease;
+
+}
+
+button:hover{background-color: var(--rojo);}
+
+button:active{
+    color: rgb(201, 201, 201);
+    background-color: #be2f2f;
+}
     
 </style>
 
