@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/layouts.astro"
+// Imagenes
+import Logo from "../assets/icons/logo.png"
+import Relleno from "../assets/index-image/relleno.png"
+import Vista from "../assets/index-image/vista-previa.png"
+import Ubicacion from "../assets/index-image/ubicacion.jpg"
 ---
 
 <Layout>
@@ -10,7 +15,7 @@ import Layout from "../layouts/layouts.astro"
 	
 				<div class="main-page">
 					<div class="presentation">
-						<img src="/public/img/icons/logo.png" alt="">
+						<img src={Logo.src} alt="">
 					</div>
 					 
 					<div class="title">
@@ -31,7 +36,7 @@ import Layout from "../layouts/layouts.astro"
 					 </div>
 	
 					 <div class="img-relleno">
-						<img src="/public/img/index-image/relleno.png" alt="">
+						<img src={Relleno.src} alt="">
 					 </div>
 				</div>
 
@@ -41,7 +46,7 @@ import Layout from "../layouts/layouts.astro"
 
 				<div class="ancho">
 					<div class="img-relleno2">
-						<img src="/public/img/index-image/vista-previa.png" alt="">
+						<img src={Vista.src} alt="">
 				   </div>
 	
 					<div class="back">
@@ -73,7 +78,7 @@ import Layout from "../layouts/layouts.astro"
 		 
 		 
 				<div class="map">
-					<img src="/public/img/index-image/ubicacion.jpg" alt="">
+					<img src={Ubicacion.src} alt="">
 				</div>
 		 
 			</section>
@@ -90,7 +95,7 @@ import Layout from "../layouts/layouts.astro"
 	}
 
 	.bgc{
-		background-image: url("/public/img/index-image/main-fondo.jpg");
+		background-image: url("../assets/index-image/main-fondo.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
